@@ -24,7 +24,7 @@ Make sure you have the following installed:
 ### 📁 Project Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/ShubhamMallick/space-corgo-stowage-management.git
 cd iss-cargo-stowage-management
 npm install
 ```
