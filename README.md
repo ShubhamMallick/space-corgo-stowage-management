@@ -1,21 +1,17 @@
-Sure Shubham! Here’s your complete `README.md` file ready to copy and paste or save directly into your project:
-
----
-
 ```markdown
 # 🚀 ISS Cargo Stowage Management
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
-It aims to manage and optimize cargo stowage aboard the International Space Station (ISS).
+It aims to manage and optimize cargo stowage aboard the International Space Station (ISS) with an intuitive user interface and Dockerized deployment.
 
 ---
 
-## 📦 Getting Started
-
-To run the app locally, follow these steps:
+## 📦 Getting Started (Locally without Docker)
 
 ### ✅ Prerequisites
+
 Make sure you have the following installed:
+
 - [Node.js and npm](https://nodejs.org/)
 - Git
 
@@ -24,22 +20,48 @@ Make sure you have the following installed:
 ### 📁 Project Setup
 
 ```bash
-git clone https://github.com/ShubhamMallick/space-corgo-stowage-management.git
+git clone https://github.com/ShubhamMallick/iss-cargo-stowage-management.git
 cd iss-cargo-stowage-management
 npm install
 ```
 
 ---
 
-### 🚀 Start the App
+### 🚀 Start the App (Local Development)
 
 ```bash
 npm start
 ```
 
 The app runs in development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.  
-The page will automatically reload on changes.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+---
+
+## 🐳 Dockerized Deployment
+
+This app is packaged with a `Dockerfile` using `ubuntu:22.04` as the base image and serves the app on **port 8000**.
+
+### ✅ Prerequisites
+- Docker installed and running
+
+---
+
+### 🔨 Build the Docker Image
+
+```bash
+docker build -t iss-cargo-app .
+```
+
+---
+
+### 🚀 Run the Docker Container
+
+```bash
+docker run -p 8000:8000 iss-cargo-app
+```
+
+Then visit [http://localhost:8000](http://localhost:8000) in your browser.
 
 ---
 
@@ -60,45 +82,15 @@ More on testing here: [Running Tests](https://facebook.github.io/create-react-ap
 npm run build
 ```
 
-Builds the app for production to the `build` folder.  
-It minifies the files and optimizes React for best performance.  
-Learn more about deployment here:  
-[Create React App - Deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
----
-
-## ⚠️ Eject (Optional)
-
-```bash
-npm run eject
-```
-
-> **Note:** This is a one-way operation. Once you eject, you can’t go back!  
-Ejecting gives you full control over the build configuration, but it's usually not needed.
-
----
-
-## 📚 Learn More
-
-- [Create React App Docs](https://facebook.github.io/create-react-app/docs/getting-started)
-- [React Docs](https://reactjs.org/)
-
----
-
-## 📖 Advanced Topics
-
-- [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-- [Analyzing Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-- [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-- [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-- [Troubleshooting Build Issues](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Builds the app for production to the `build/` folder.  
+This includes optimization and minification for best performance.
 
 ---
 
 ## 🧑‍🚀 Project Status
 
-This is an ongoing project aimed at optimizing space logistics.  
-Feel free to contribute or suggest improvements!
+This is an ongoing project for a hackathon challenge to improve cargo management aboard the ISS.  
+A backend system and API logic will be added in future versions.
 
 ---
 
@@ -106,8 +98,9 @@ Feel free to contribute or suggest improvements!
 
 **Shubham Mallick**  
 Made with 💻 and 🚀 for the Hackathon project.
-```
 
 ---
 
-Let me know if you'd like me to turn this into a downloadable file or include GitHub badges like "MIT License", "Made with React", etc.
+```
+
+Let me know if you want a downloadable `.md` file or to add badges like “Docker Ready” or “Hackathon Project.”
