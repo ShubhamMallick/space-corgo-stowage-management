@@ -102,5 +102,3 @@ Made with 💻 and 🚀 for the Hackathon project.
 ---
 
 ```
-
-Let me know if you want a downloadable `.md` file or to add badges like “Docker Ready” or “Hackathon Project.”
